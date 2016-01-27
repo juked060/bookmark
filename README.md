@@ -2,6 +2,8 @@ questionsJs
 ====
 
 Inspired by Firebase & AngularJS TodoMVC Example
+#### Chat
+[![Gitter chat](https://badges.gitter.im/angular-ui/angular-google-maps.svg)](https://gitter.im/hunkim/bookmark)
 
 #### Configuration
 Please change this firebase URL to your app URL. Otherwise, it won't work.
