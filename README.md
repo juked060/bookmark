@@ -1,4 +1,5 @@
-questionsJs
+[![Build Status](https://travis-ci.org/COMP3111/bookmark.svg?branch=master)](https://travis-ci.org/COMP3111/bookmark)
+Bookmark
 ====
 
 Inspired by Firebase & AngularJS TodoMVC Example
