@@ -1,6 +1,6 @@
 'use strict'; 
 describe('PasswordController', function() {
-  var $controller, $firebaseArray, $httpBackend, $http, $scope;
+  var $controller, $firebaseArray, $httpBackend, $http, $scope_mock;
   
   // Injecting variables
   // http://stackoverflow.com/questions/13664144/how-to-unit-test-angularjs-controller-with-location-service
@@ -15,14 +15,14 @@ describe('PasswordController', function() {
       $http = _$http_;
 
       // need to get a new scope
-      $scope = _$rootScope_.$new();
+      $scope_mock = _$rootScope_.$new();
     });
   });
 
   describe('$scope.add', function() {
     it('add testing', function() {
-      var controller = $controller('Ctrl', {$scope});
-      expect($scope.add(1,1)).toEqual(2);
+      var controller = $controller('Ctrl', {$scope:$scope_mock});
+      expect($scope_mock.add(1,1)).toEqual(2);
     });
   });
 });
