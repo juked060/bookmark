@@ -21,8 +21,7 @@ describe('PasswordController', function() {
 
   describe('$scope.add', function() {
     it('add testing', function() {
-      var $scope = {};
-      var controller = $controller('Ctrl', { $scope: $scope });
+      var controller = $controller('Ctrl', {$scope});
       expect($scope.add(1,1)).toEqual(2);
     });
   });
