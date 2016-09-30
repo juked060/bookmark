@@ -1,7 +1,7 @@
 var app = angular.module("Bookmark", ['firebase']);  
 
 app.controller("Ctrl", function ($scope, $firebaseArray, $http, $bookmarkList) {
-	
+	   
   $scope.urlArr = $bookmarkList;
  
   /*
